@@ -36,8 +36,8 @@ public class ProductController {
     return products.stream()
             .filter(p -> p.getId().equals(id))
             .findFirst()
-            .map(p -> (Object) p)          
-            .orElse("Product not found");  
+            .map(p -> (Object) p)
+            .orElse("Product not found");
     }
 
 }
